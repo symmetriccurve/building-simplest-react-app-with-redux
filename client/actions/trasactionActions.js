@@ -1,17 +1,15 @@
 
 
-export function removeMoney(moneyToRemove,customerName) {
+export function removeMoney(customerName) {
   return {
-    type: 'remove_money',
-    moneyToRemove: moneyToRemove
+    type: 'removeMoney',
     customerName: customerName
    }
 }
 
-export function addMoney(moneyToAdd,customerName) {
+export function addMoney(customerName) {
   return {
-    type: 'remove_money',
-    moneyToAdd: moneyToAdd
+    type: 'addMoney',
     customerName: customerName
    }
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-const  Dave = ( {money} )=>{
+const  Dave = ( {money, addMoney, removeMoney} )=>{
   return(
     <div>
         <h1>Dave</h1>
         <div>
-            <button>+</button>
+            <button onClick={ ()=>addMoney('Dave') }>+</button>
             <h1> $ { money } </h1>
-            <button> - </button>
+            <button onClick={ ()=>removeMoney('Dave') }>-</button>
         </div>
     </div>
   )

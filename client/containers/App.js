@@ -1,50 +1,24 @@
 
 import React from 'react'
-import Bank from './Bank'
+import Bank from '../components/Bank'
 import Customers from './Customers'
 import { connect } from 'react-redux'
 
 class App extends React.Component{
-  constructor(){
-    super()
-    this.state = {
-    }
-  }
-
-    componentWillMount(){
-        this.setState({
-          name: 'Mark'
-        })
-    }
-
   render(){
     return (
         <div>
-            <Bank moneyInBank={this.props.fullBankDetails.moneyInBank}/>
-            <Customers allCustomers={this.props.fullBankDetails.allCustomers}/>
+            <Bank moneyInBank={this.props.moneyInBank} />
+            <Customers/>
         </div>
     )
   }
-  componentDidMount(){
-      this.setState({
-        name: 'Mark'
-      })
-  }
-
 }
 
 function mapStateToProps(state){
     return {
-       fullBankDetails:state.bankReducer
+       moneyInBank: state.bankReducer.moneyInBank
     }
 }
 
-function mapDispatchToProps(dispatch){
-    return {
-    }
-}
-
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(App)
+export default connect(   mapStateToProps )( App )

@@ -2,5 +2,3 @@ This App aims to breakdown the concepts of Redux and help to understand the data
 
 Redux is not just confined to React:
 Read more here: https://redux.js.org/faq/general#general-only-react
-
-Redux is State management Library what does that mean is

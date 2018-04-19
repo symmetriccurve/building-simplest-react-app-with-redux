@@ -25,4 +25,4 @@ Creating Actions
   Understanding of Action types
   Understanding of Action Payload
 Implement Reducers based on Actions types
-  Understanding of new state return
+  Understanding the state based on action type

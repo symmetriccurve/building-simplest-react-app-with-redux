@@ -1,6 +1,11 @@
 import { combineReducers } from 'redux'
 import bankReducer from './bankReducer'
+import customersReducer from './customersReducer'
+//Any number of reducers here
 
-combineReducers({
-    bankReducer:bankReducer
+const rootReducer = combineReducers({
+  bankReducer: bankReducer,
+  customersReducer: customersReducer
 })
+
+export default rootReducer

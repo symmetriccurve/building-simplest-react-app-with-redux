@@ -8,7 +8,7 @@ const Mark = (props) =>{
 
         <div>
             <button> + </button>
-            <h1> $ 10 </h1>
+            <h1> $ {props.money} </h1>
             <button> - </button>
         </div>
 

@@ -7,9 +7,9 @@ const Mark = (props) =>{
         <h1>Mark</h1>
 
         <div>
-            <button> + </button>
-            <h1> $ {props.money} </h1>
-            <button> - </button>
+        <button onClick={()=>{props.addMoney()}}> + </button>
+        <h1> $ {props.money} </h1>
+        <button onClick={()=>{props.removeMoney()}}> - </button>
         </div>
 
       </div>

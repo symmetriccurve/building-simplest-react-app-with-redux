@@ -17,7 +17,7 @@ class App extends React.Component{
 
 function mapStateToProps(state){
   return {
-    moneyInBank: state.bankReducer.moneyInBank,
+    moneyInBank: state.bankReducer.moneyInBank
   }
 }
 

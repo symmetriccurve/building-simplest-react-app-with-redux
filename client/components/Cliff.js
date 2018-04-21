@@ -7,9 +7,10 @@ const Cliff = (props) =>{
         <h1>Cliff </h1>
 
         <div>
-            <button> + </button>
+            <button onClick={()=>{ props.addMoney() }}> + </button>
+
             <h1> $ {props.money} </h1>
-            <button> - </button>
+          <button onClick={()=>{props.removeMoney()}}> - </button>
         </div>
 
       </div>

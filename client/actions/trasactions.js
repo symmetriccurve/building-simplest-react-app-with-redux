@@ -1,0 +1,1 @@
+{ type: 'removeMoney',customerName:'Cliff' }
